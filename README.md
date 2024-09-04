@@ -12,12 +12,9 @@ Welcome to Tomato Disease Detection, deep learning-based model designed to accur
           `sudo docker run -it -v {PATH}/saved_model/:/saved_model -p 8601:8601 --entrypoint /bin/bash tensorflow/serving`<br/>
           `tensorflow_model_server --rest_api_port=8601 --model_name=TDD --model_base_path=/saved_model/tomato/`<br/>
 * Verify if TensorFlow Serving working: http://localhost:8601/v1/models/TDD<br/>
-* Run app.py: `python manage.py runserver`
+* Run app.py: `python manage.py runserver`<br/>
 ![Postman](https://i.ibb.co/88f4f38/tomato.jpg)
 
-# License
-
-MIT License
 
 
 
